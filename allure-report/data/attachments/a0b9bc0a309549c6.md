@@ -1,0 +1,231 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: HomePage.spec.ts >> CorrectData
+- Location: tests\HomePage.spec.ts:16:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('a:has-text("PRACTICE")').first()
+    - locator resolved to <a href="https://practicetestautomation.com/practice/">Practice</a>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 100ms
+    20 × waiting for element to be visible, enabled and stable
+       - element is not visible
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - link "Press \"Enter\" to skip to content" [ref=e2]:
+    - /url: "#main-container"
+  - generic [ref=e4]:
+    - banner [ref=e5]:
+      - link "Practice Test Automation" [ref=e9]:
+        - /url: https://practicetestautomation.com/
+        - img "Practice Test Automation" [ref=e10]
+      - button "open menu" [ref=e13]:
+        - generic [ref=e14]: open menu
+        - img [ref=e15]
+    - main [ref=e25]:
+      - article [ref=e28]:
+        - heading "Hello" [level=1] [ref=e30]
+        - generic [ref=e31]:
+          - figure [ref=e33]:
+            - img "Dmitry Shyshkin, your Selenium WebDriver instructor" [ref=e34]
+          - paragraph [ref=e35]:
+            - strong [ref=e36]: Welcome to Practice Test Automation!
+          - paragraph [ref=e37]: I’m Dmitry Shyshkin, your guide on the path to a thriving QA career. Effortlessly master Selenium WebDriver and test automation to enhance your skills and increase your earnings.
+          - paragraph [ref=e38]:
+            - strong [ref=e39]: Experience and Expertise
+          - paragraph [ref=e40]: As a Principal Software Development Engineer in Test, I bring over a decade of experience in automating Web UI, API, and Mobile tests using tools like Selenium WebDriver, Appium, Postman, RestAssured, and more. I began my journey as a manual QA engineer and quickly developed a passion for test automation. Having served as the lead test automation expert in various projects, I’m confident in my ability to help you excel in test automation.
+          - paragraph [ref=e41]:
+            - strong [ref=e42]: Beyond Test Automation
+          - paragraph [ref=e43]: Not only have I automated tests, but I’ve also applied automation to job searches and even finding cheaper flights! Now, I’m eager to share this passion and knowledge with you.
+          - paragraph [ref=e44]:
+            - strong [ref=e45]: Courses and Achievements
+          - paragraph [ref=e46]:
+            - text: In 2017, I started sharing my test automation expertise through video courses, beginning with a Selenium WebDriver tutorial on YouTube. Today, I offer
+            - link "nine courses with over 100,000 students" [ref=e47]:
+              - /url: https://practicetestautomation.com/courses/
+            - text: ", including a"
+            - strong [ref=e48]:
+              - link "BestSeller XPath course" [ref=e49]:
+                - /url: https://www.udemy.com/course/xpath-locators-for-selenium/?referralCode=ACB28329B5AC2333DDCC
+            - text: and a
+            - strong [ref=e50]:
+              - link "HighestRated Selenium course" [ref=e51]:
+                - /url: https://www.udemy.com/course/selenium-for-beginners/?referralCode=A21BE51035C15406EFA4
+            - text: . With a 4.7 out of 5 instructor rating, I’m grateful to every student who has joined me on this journey.
+          - paragraph [ref=e52]:
+            - strong [ref=e53]: A Resourceful Website
+          - paragraph [ref=e54]:
+            - text: This website was carefully crafted to host a
+            - strong [ref=e55]:
+              - link "diverse selection of articles, standalone lectures, tips, and examples" [ref=e56]:
+                - /url: https://practicetestautomation.com/blog/
+            - text: for those interested in test automation. Moreover, with a
+            - strong [ref=e57]:
+              - link "practical platform" [ref=e58]:
+                - /url: https://practicetestautomation.com/practice/
+            - text: already established, test automation beginners can easily put their skills into practice.
+          - paragraph [ref=e59]:
+            - strong [ref=e60]: Looking Ahead
+          - paragraph [ref=e61]: As we look ahead, I’m thrilled about the future of Practice Test Automation and delighted to have you on board!
+          - paragraph [ref=e62]:
+            - strong [ref=e63]: Explore and Learn
+          - paragraph [ref=e64]:
+            - text: Please be sure to visit our
+            - strong [ref=e65]:
+              - link "BLOG" [ref=e66]:
+                - /url: https://practicetestautomation.com/blog/
+            - text: for engaging articles, speeches, and tutorials, and don’t miss our
+            - link "COURSES" [ref=e67]:
+              - /url: https://practicetestautomation.com/courses/
+              - strong [ref=e68]: COURSES
+            - text: ", designed to enrich your learning experience."
+          - paragraph
+          - generic [ref=e70]:
+            - heading "Get a FREE XPath cheat sheet by Signing Up for our newsletter" [level=6] [ref=e74]
+            - generic [ref=e76]:
+              - textbox "Name *" [ref=e79]
+              - textbox "Email Address *" [ref=e82]
+            - button "Get XPath cheat sheet" [ref=e84]
+            - paragraph [ref=e85]:
+              - emphasis [ref=e86]:
+                - generic [ref=e87]:
+                  - text: We don’t spam! Read more in our
+                  - link "privacy policy" [ref=e88]:
+                    - /url: https://practicetestautomation.com/privacy-policy/
+    - contentinfo:
+      - generic [ref=e90]:
+        - text: © Copyright 2020
+        - link "Practice Test Automation." [ref=e91]:
+          - /url: https://practicetestautomation.com/
+        - text: All rights reserved |
+        - link "Privacy Policy" [ref=e92]:
+          - /url: https://practicetestautomation.com/privacy-policy/
+  - generic [ref=e94]:
+    - generic [ref=e96]:
+      - generic [ref=e97]:
+        - heading "AI test automation workshop" [level=2] [ref=e100]
+        - paragraph [ref=e102]: Hands-on, small-cohort, honest about where AI fails. Cohorts run by timezone — join to hear when yours opens.
+        - button [ref=e103]:
+          - img [ref=e104]
+      - generic [ref=e105]:
+        - generic [ref=e106]:
+          - textbox "Email Address" [active] [ref=e108]
+          - combobox [ref=e111] [cursor=pointer]:
+            - option "What's your timezone?" [selected]
+            - option "Americas (UTC−8 to −3)"
+            - option "Europe / Africa / Middle East (UTC−1 to +3)"
+            - option "India / South Asia (UTC+5 to +6:30)"
+            - option "East Asia / SE Asia / Oceania"
+          - combobox [ref=e114] [cursor=pointer]:
+            - option "Which test framework?" [selected]
+            - option "Playwright"
+            - option "Selenium"
+            - option "Either"
+          - combobox [ref=e117] [cursor=pointer]:
+            - option "How did you find this?" [selected]
+            - option "Udemy"
+            - option "Linkedin"
+            - option "Blog / Practice Test Automation website"
+            - option "Somewhere else"
+          - button "Subscribe" [ref=e118] [cursor=pointer]:
+            - generic [ref=e119]: Subscribe
+        - generic [ref=e120]: We respect your privacy. Unsubscribe at any time.
+        - link "Built with Kit" [ref=e122] [cursor=pointer]:
+          - /url: https://kit.com/features/forms?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic
+    - button "Close" [ref=e123] [cursor=pointer]:
+      - img [ref=e124]
+```
+
+# Test source
+
+```ts
+  1  | import { Page, expect, Locator } from '@playwright/test';
+  2  | 
+  3  | export class HomePage {
+  4  |     // Assign Variables
+  5  |     readonly page : Page;
+  6  |     readonly practiceBtn: Locator;
+  7  |     readonly testBtn: Locator;
+  8  |     readonly usernameInput: Locator;
+  9  |     readonly passwordInput: Locator;
+  10 |     readonly submitBtn: Locator;
+  11 |     readonly errorMessage: Locator;
+  12 | 
+  13 | 
+  14 | 
+  15 | 
+  16 |     constructor(page: Page) {
+  17 |         
+  18 |         // Initialize locators
+  19 |         this.page = page;
+  20 |         this.practiceBtn = page.locator('a:has-text("PRACTICE")').nth(0);
+  21 |         this.testBtn = page.getByRole('link', { name: 'Test Login Page' });
+  22 |         this.usernameInput = page.getByRole('textbox', { name: 'Username' })
+  23 |         this.passwordInput = page.getByRole('textbox', { name: 'Password' })
+  24 |         this.submitBtn  = page.getByRole('button', { name: 'Submit' });
+  25 |         this.errorMessage = page.locator('#error');
+  26 | 
+  27 |     }
+  28 | 
+  29 | 
+  30 |     // Actions
+  31 | 
+  32 |     async isHomePageExists() {
+  33 | 
+  34 |         let title:string = await this.page.title();
+  35 |         if(title=="Practice Test Automation | Learn Selenium WebDriver")
+  36 |         {
+  37 |             console.log("Home page is displayed");
+  38 |             return true;
+  39 |         }
+  40 |         return false;
+  41 |     }
+  42 | 
+  43 |     async tillPageLoad() {
+> 44 |         await this.practiceBtn.click();
+     |                                ^ Error: locator.click: Test timeout of 30000ms exceeded.
+  45 |         await this.testBtn.click();
+  46 |         
+  47 |     }
+  48 |     async enterDetails(username: string, password: string) {
+  49 |         await this.usernameInput.fill(username);
+  50 |         await this.passwordInput.fill(password);
+  51 |         await this.submitBtn.click();
+  52 |     }
+  53 | 
+  54 | 
+  55 | 
+  56 | 
+  57 | 
+  58 | 
+  59 | }
+```

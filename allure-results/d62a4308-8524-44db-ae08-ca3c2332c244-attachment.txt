@@ -1,0 +1,2 @@
+Home page is displayed
+Your password is invalid!
