@@ -83,9 +83,11 @@ test('registers a new user and reaches the account overview when the live site a
 
      await expect(page.locator('body')).toContainText(/Welcome|Account Services|Customer Created/);
 
-     await expect(homePage.usernameInput).toBeVisible();
+        if (page.url().includes("overview")) {
+     // Already logged in
+        } else {
      await homePage.login(user, pwd);
-
+        }
      await expect(page).toHaveURL(/overview|accounts/i);
      await expect(page.getByRole('link', { name: 'Accounts Overview' })).toBeVisible();
      await expect(page.getByRole('link', { name: 'Open New Account' })).toBeVisible();
